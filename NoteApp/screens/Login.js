@@ -6,7 +6,6 @@ export class Login extends Component {
   render() {
     return (
       <View>
-        <Text>This is the Login screen</Text>
         <FormLabel>Email</FormLabel>
         <FormInput/>
         <FormLabel>Password</FormLabel>

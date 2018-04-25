@@ -7,7 +7,6 @@ export class CreateAccount extends Component {
   render() {
     return (
       <View>
-        <Text>This is create account page</Text>
         <FormLabel>First Name</FormLabel>
         <FormInput/>
         <FormLabel>Last Name</FormLabel>

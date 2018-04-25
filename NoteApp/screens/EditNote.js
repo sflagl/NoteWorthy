@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text} from 'react-native';
-import { Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
+import { Button, FormLabel, FormInput, FormValidationMessage, Overlay } from 'react-native-elements';
 
 export class EditNote extends Component {
     render() {
