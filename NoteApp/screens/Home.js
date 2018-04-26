@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet} from 'react-native';
-import { Card, ListItem, Button, Icon, Avatar } from 'react-native-elements';
+import { Div, View, Text, StyleSheet} from 'react-native';
+
 import { Col, Row, Grid } from "react-native-easy-grid";
+import { Container} from 'native-base';
+
+import HeaderComp from '../comps/header.js';
+import FooterComp from '../comps/footer.js';
 
 export class Home extends Component {
   render() {
@@ -13,50 +17,45 @@ export class Home extends Component {
       //   <Button style={styles.buttonSolid}
       //    onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>
       // </View>
-      <Grid>
-      <Row>
-        <Col>
-          <Avatar
-              xlarge
-              rounded
-              source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg"}}
-              onPress={() => console.log("Works!")}
-              activeOpacity={0.7}
-            />
-        </Col>
 
-               
-      </Row>
-      <Row>
-        <Col>
-          <Text>Note Worthy</Text>    
-        </Col>
+      
 
-      </Row>
-      <Row>
-        <Col>
-          <Button
-          onPress={() => this.props.navigation.navigate('LoginScreen')} title="Login"/>
-        </Col>
-        <Col>
-          <Button style={styles.buttonSolid}
-          onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>
-        </Col>
+      
+        <Grid>
+          <HeaderComp />
+            <Row>
+              <Col>
+
+              </Col>     
+            </Row>
+            <Row>
+              <Col>
+                <Text>Note Worthy</Text>    
+              </Col>
+
+            </Row>
+            <Row>
+              <Col>
+                {/* <Button
+                onPress={() => this.props.navigation.navigate('LoginScreen')} title="Login"/> */}
+              </Col>
+              <Col>
+                {/* <Button
+                onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/> */}
+              </Col>
 
 
-      </Row>
-  </Grid>
+            </Row>
+            <FooterComp/>
+        </Grid>
+      
+
+    
     )
   }
 }
 
 
 
-const styles = StyleSheet.create({
-  buttonSolid: {
-
-  },
-
-})
 
 export default Home;
