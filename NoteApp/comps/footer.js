@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { View, StyleSheet} from 'react-native';
 import { Col, Row, Grid } from "react-native-easy-grid";
-import { Container, Content, Footer, FooterTab, Button, Text, Icon } from 'native-base';
+import { Container, Content, Footer, FooterTab, Button, Text } from 'native-base';
+// import { render } from 'react-dom';
+// import Ionicon from 'react-ionicons';
 
-
+import Icon from 'react-native-ionicons'
 
 export class FooterComp extends Component {
   render() {
@@ -12,15 +14,16 @@ export class FooterComp extends Component {
         <Content />
         <Footer>
           <FooterTab>
-            <Button>
-          
+            <Button> 
+            <Icon name="images" />
               <Text>Gallery</Text>
             </Button>
-            <Button>
+            {/* <Button>
             <Icon name='camera' />
               <Text>Camera</Text>
-            </Button>
-            <Button active>
+            </Button> */}
+            <Button>
+              <Icon name="create" />
               <Text>Add Note</Text>
             </Button>
           </FooterTab>

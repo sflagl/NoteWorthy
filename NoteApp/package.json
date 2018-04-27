@@ -12,14 +12,15 @@
     "native-base": "^2.4.2",
     "react": "16.3.1",
     "react-dom": "^16.3.2",
-    "react-ionicons": "^2.1.6",
     "react-native": "0.55.3",
     "react-native-easy-grid": "^0.1.17",
+    "react-native-ionicons": "^0.2.1",
     "react-native-snap-carousel": "^3.7.0",
     "react-navigation": "^1.5.11"
   },
   "devDependencies": {
     "babel-jest": "22.4.3",
+    "babel-preset-env": "^1.6.1",
     "jest": "22.4.3",
     "react-test-renderer": "16.3.1"
   },

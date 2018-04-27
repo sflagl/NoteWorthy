@@ -14,10 +14,10 @@ import {
 
 // import { StackNavigator } from 'react-navigation';
 // import Login from './screens/Login';
-import Home from './screens/Home';
+// import Home from './screens/Home';
 // import CreateAccount from './screens/CreateAccount';
 // import Option from './screens/Option';
-// import AddNote from './screens/AddNote';
+import AddNote from './screens/AddNote';
 // import EditNote from './screens/EditNote';
 // import StartView from './screens/StartView';
 // import Gallery from './screens/Gallery';
@@ -48,7 +48,7 @@ import Home from './screens/Home';
 export default class App extends Component {
   render() {
     return (
-      <Home />
+      <AddNote />
     );
   }
 }

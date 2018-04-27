@@ -17,10 +17,6 @@ export class Home extends Component {
       //   <Button style={styles.buttonSolid}
       //    onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>
       // </View>
-
-      
-
-      
         <Grid>
           <HeaderComp />
             <Row>
@@ -30,7 +26,7 @@ export class Home extends Component {
             </Row>
             <Row>
               <Col>
-                <Text>Note Worthy</Text>    
+                <Text>Home</Text>    
               </Col>
 
             </Row>
