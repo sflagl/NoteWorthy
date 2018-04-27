@@ -1,48 +1,48 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
+import { Image, StyleSheet } from 'react-native';
+import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Left, Body, Right } from 'native-base';
+import Icon from 'react-native-ionicons';
 
 
 
-export default class CardImageExample extends Component {
+export class GalleryCard extends Component {
   render() {
     return (
-      <Container>
-        <Header />
-        <Content>
-          <Card>
-            <CardItem>
-              <Left>
-                <Thumbnail source={{uri: 'Image URL'}} />
-                <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>GeekyAnts</Text>
-                </Body>
-              </Left>
-            </CardItem>
-            <CardItem cardBody>
-              <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
-            </CardItem>
-            <CardItem>
-              <Left>
+     
+      <Content cardBody style={{padding: 10}}>
+        <Card style={{paddingBottom: 5}}>
+          <CardItem>
+            <Image source={require('../images/bear.jpg')} style={{height: 40, width: null, flex: 1}}/>
+          </CardItem>
+          <CardItem style={{marginTop: -5,marginBottom: -5 }}>
+            <Left>
+              <Body >
                 <Button transparent>
-                  <Icon active name="thumbs-up" />
-                  <Text>12 Likes</Text>
-                </Button>
-              </Left>
-              <Body>
-                <Button transparent>
-                  <Icon active name="chatbubbles" />
-                  <Text>4 Comments</Text>
+                <Text>NativeBase</Text>
                 </Button>
               </Body>
-              <Right>
-                <Text>11h ago</Text>
-              </Right>
-            </CardItem>
-          </Card>
-        </Content>
-      </Container>
+            </Left>
+            <Right>
+            <Button transparent>
+              <Icon active name="arrow-round-forward" />
+              </Button>
+            </Right>
+          </CardItem>
+        </Card>
+      </Content>
+     
+
     );
   }
 }
+
+
+const styles = StyleSheet.create({
+  mtop: {
+    marginTop: 10,
+  }
+});
+
+StyleSheet.flatten([styles.mtop])
+
+export default GalleryCard;

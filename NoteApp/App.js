@@ -17,7 +17,8 @@ import {
 // import Home from './screens/Home';
 // import CreateAccount from './screens/CreateAccount';
 // import Option from './screens/Option';
-import AddNote from './screens/AddNote';
+// import AddNote from './screens/AddNote';
+import { StartView } from './screens/StartView';
 // import EditNote from './screens/EditNote';
 // import StartView from './screens/StartView';
 // import Gallery from './screens/Gallery';
@@ -48,7 +49,7 @@ import AddNote from './screens/AddNote';
 export default class App extends Component {
   render() {
     return (
-      <AddNote />
+      <StartView />
     );
   }
 }

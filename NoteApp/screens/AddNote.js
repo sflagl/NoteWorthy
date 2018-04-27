@@ -5,48 +5,53 @@ import { Container, Button, Content} from 'native-base';
 
 import HeaderComp from '../comps/header.js';
 import FooterComp from '../comps/footer.js';
+import Thumb from '../comps/thumbnail';
+import Cam from '../comps/camera';
+import ButtonOutline from '../comps/button-outline';
+import ButtonSolid from '../comps/button';
 
 export class AddNote extends Component {
   render() {
     return (
+      <Container style={{margin: 5}}>
+
+
+        
+
+        
       <Grid>
       <HeaderComp />
-        <Row>
-          <Col>
-
-          </Col>     
+   
+        <Row size={1} style={{backgroundColor:'grey', padding:5}}>
+          <Cam style={{justifyContent: 'center',
+        alignItems: 'center'}}/>
         </Row>
-        <Row>
+        <Row size={1} style={{ padding:5, margin: 5, justifyContent: 'center',
+        alignItems: 'center'}}>
           <Col>
-            <Text>Add Note</Text>    
-          </Col>
-
+            <Thumb/>
+          </Col>   
+          <Col>
+            <Thumb/>
+          </Col>   
+          <Col>
+            <Thumb/>
+          </Col>   
+          <Col>
+            <Thumb/>
+          </Col>   
         </Row>
-        <Content>
-          <Button block success>
-            <Text>Light</Text>
-          </Button>
-        </Content>
-        <Row>
-          <Col>
-          
-            {/* <Button
-            onPress={() => this.props.navigation.navigate('LoginScreen')} title="Login"/> */}
-          </Col>
-          <Col>
-            <Button
-            onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>
-          </Col>
-
-
+        <Row size={1}>
+        <Col>
+              <ButtonOutline/>  
+              <ButtonSolid/>    
+            </Col>
         </Row>
+
+
         <FooterComp/>
     </Grid>
-      // <View>
-      //   <Text>This is create AddNote page</Text>
-      //   <Button onPress={() => this.props.navigation.navigate('GalleryScreen')} title="Submit"/>
-      //   <Button title="Take Picture"/>
-      // </View>
+     </Container>
     )
   }
 }

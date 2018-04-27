@@ -5,13 +5,12 @@ import { Container, Content, Footer, FooterTab, Button, Text } from 'native-base
 // import { render } from 'react-dom';
 // import Ionicon from 'react-ionicons';
 
-import Icon from 'react-native-ionicons'
+import Icon from 'react-native-ionicons';
 
 export class FooterComp extends Component {
   render() {
     return (
-      <Container>
-        <Content />
+
         <Footer>
           <FooterTab>
             <Button> 
@@ -28,7 +27,7 @@ export class FooterComp extends Component {
             </Button>
           </FooterTab>
         </Footer>
-      </Container>
+
     );
   }
 }

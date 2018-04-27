@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 import { Col, Row, Grid } from "react-native-easy-grid";
-import { Container} from 'native-base';
+import { Container, Content} from 'native-base';
 
 import HeaderComp from '../comps/header.js';
 import FooterComp from '../comps/footer.js';
+import GalleryCard from '../comps/card.js';
 
 
 export class Gallery extends Component {
@@ -13,34 +14,22 @@ export class Gallery extends Component {
 
     render() {
       return (
-
+        <Container>
+        <Content>
         <Grid>
-          <HeaderComp />
-            <Row>
-              <Col>
+        <HeaderComp />
+     
+          <Row>
+            <GalleryCard />   
+          </Row>
+          <Row>
+            <GalleryCard />   
+          </Row>
 
-              </Col>     
-            </Row>
-            <Row>
-              <Col>
-                <Text>Gallery</Text>    
-              </Col>
-
-            </Row>
-            <Row>
-              <Col>
-                {/* <Button
-                onPress={() => this.props.navigation.navigate('LoginScreen')} title="Login"/> */}
-              </Col>
-              <Col>
-                {/* <Button
-                onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/> */}
-              </Col>
-
-
-            </Row>
-            <FooterComp/>
-        </Grid>
+       <FooterComp/>   
+      </Grid>
+      </Content>
+      </Container>
         // <View>         
         //   <Card
         //       image={require('../images/bear.jpg')}>

@@ -6,7 +6,7 @@ import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'nativ
 export class HeaderComp extends Component {
     render() {
       return (
-        <Container>
+   
         <Header>
           <Left>
               <Icon name='camera' />
@@ -18,7 +18,7 @@ export class HeaderComp extends Component {
               <Icon name='lock' />
           </Right>
         </Header>
-      </Container>
+ 
       )
     }
   }
