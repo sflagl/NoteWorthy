@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import { View, Text} from 'react-native';
+import { View, Text, Button} from 'react-native';
+import ButtonOutline from '../comps/button-outline';
 // import { Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
 
 export class Login extends Component {
   render() {
     return (
-      <View>
-        {/* <FormLabel>Email</FormLabel>
-        <FormInput/>
-        <FormLabel>Password</FormLabel>
-        <FormInput/>
-        <Button onPress={() => this.props.navigation.navigate('OptionScreen')} title="Submit"/> */}
-      </View>
+
+  
+        <ButtonOutline onPress={() => this.props.navigation.navigate('OptionScreen')} title="Submit"/>
+
     )
   }
 };

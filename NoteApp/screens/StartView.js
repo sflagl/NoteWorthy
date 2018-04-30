@@ -13,7 +13,7 @@ import ButtonSolid from '../comps/button';
 export class StartView extends Component {
   render() {
     return (
-      <Container style={{margin: 5}}>
+    
 
 
         
@@ -37,7 +37,7 @@ export class StartView extends Component {
 
         <FooterComp/>
     </Grid>
-     </Container>
+ 
     )
   }
 }

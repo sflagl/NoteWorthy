@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Div, View, Text, StyleSheet} from 'react-native';
+import { Div, View, Text, StyleSheet, Button} from 'react-native';
 
 import { Col, Row, Grid } from "react-native-easy-grid";
 import { Container, Content} from 'native-base';
@@ -11,6 +11,7 @@ import Icon from 'react-native-ionicons';
 
 export class Home extends Component {
   render() {
+    
     return (
       <Container>
   
@@ -28,8 +29,8 @@ export class Home extends Component {
           </Row>
           <Row size={1}>
             <Col style={{ padding: 10 }}>
-              <ButtonOutline/>  
-              <ButtonSolid/>    
+              <ButtonOutline onPress={() => this.props.navigation.navigate('LoginScreen')} title="Login"/>  
+              <ButtonSolid onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>    
             </Col>
           </Row>
 

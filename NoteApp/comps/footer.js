@@ -13,7 +13,9 @@ export class FooterComp extends Component {
 
         <Footer>
           <FooterTab>
-            <Button> 
+            <Button onPress={() => this.props.navigation.navigate('GalleryScreen')}>
+
+
             <Icon name="images" />
               <Text>Gallery</Text>
             </Button>
@@ -21,7 +23,7 @@ export class FooterComp extends Component {
             <Icon name='camera' />
               <Text>Camera</Text>
             </Button> */}
-            <Button>
+            <Button onPress={() => this.props.navigation.navigate('AddNoteScreen')}>
               <Icon name="create" />
               <Text>Add Note</Text>
             </Button>

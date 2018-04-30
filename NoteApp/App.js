@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+import { NativeRouter, Route, Link } from 'react-router-native'
+
 import { StackNavigator } from 'react-navigation';
 import Login from './screens/Login';
 import Home from './screens/Home';
@@ -24,10 +26,13 @@ import Gallery from './screens/Gallery';
 import GalleryOpen from './screens/GalleryOpen';
 
 const AppNavigator = StackNavigator({
-  StartViewScreen: {screen: StartView},
+  
   HomeScreen: { screen: Home },
-  // LoginScreen: { screen: Login },
+  LoginScreen: { screen: Login },
+  
   CreateAccountScreen: {screen: CreateAccount},
+  StartViewScreen: {screen: StartView},
+  
   OptionScreen: {screen: Option},
   AddNoteScreen: { screen: AddNote },
   EditNoteScreen: { screen: EditNote },
@@ -36,6 +41,8 @@ const AppNavigator = StackNavigator({
   GalleryOpenScreen: {screen: GalleryOpen}
 
 });
+
+
 
 export default class App extends Component {
   render() {
