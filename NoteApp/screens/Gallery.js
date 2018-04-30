@@ -14,8 +14,7 @@ export class Gallery extends Component {
 
     render() {
       return (
-        <Container>
-        <Content>
+     
         <Grid>
         <HeaderComp />
      
@@ -28,8 +27,7 @@ export class Gallery extends Component {
 
        <FooterComp/>   
       </Grid>
-      </Content>
-      </Container>
+     
         // <View>         
         //   <Card
         //       image={require('../images/bear.jpg')}>

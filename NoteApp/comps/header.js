@@ -9,7 +9,9 @@ export class HeaderComp extends Component {
    
         <Header>
           <Left>
+            <Button transparent  onPress={() => this.props.navigation.navigate('StartView')}>
               <Icon name='camera' />
+            </Button>
           </Left>
           <Body>
             <Title>NoteWorthy</Title>
