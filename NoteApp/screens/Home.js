@@ -9,10 +9,19 @@ import ButtonSolid from '../comps/button';
 import UsernamePassword from '../comps/username-password';
 import Icon from 'react-native-ionicons';
 
+import { StackNavigator, NavigationActions, navigationOptions } from 'react-navigation';
+
 export class Home extends Component {
+  static navigationOptions = {
+    header: null
+  };
+
   render() {
-    
+    let logbtn = {
+      name: 'login'
+  }
     return (
+   
       <Container>
   
       <Content>
@@ -29,8 +38,9 @@ export class Home extends Component {
           </Row>
           <Row size={1}>
             <Col style={{ padding: 10 }}>
-              <ButtonOutline onPress={() => this.props.navigation.navigate('LoginScreen')} title="Login"/>  
-              <ButtonSolid onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>    
+              
+              <ButtonOutline press={() => this.props.navigation.navigate('LoginScreen')}/>  
+              <ButtonSolid press={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>    
             </Col>
           </Row>
 

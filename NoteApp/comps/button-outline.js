@@ -7,8 +7,8 @@ export class ButtonOutline extends Component {
 
        
     
-          <Button style={{ margin: 10 }} block bordered rounded success>
-            <Text>B</Text>
+          <Button onPress={this.props.press} style={{ margin: 10, color:'red' }} block bordered rounded success>
+           
           </Button>
    
     

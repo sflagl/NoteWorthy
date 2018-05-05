@@ -14,7 +14,7 @@ import {
 
 import { NativeRouter, Route, Link } from 'react-router-native'
 
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator, NavigationActions, navigationOptions, TabNavigator } from 'react-navigation';
 import Login from './screens/Login';
 import Home from './screens/Home';
 import CreateAccount from './screens/CreateAccount';
@@ -24,11 +24,16 @@ import EditNote from './screens/EditNote';
 import StartView from './screens/StartView';
 import Gallery from './screens/Gallery';
 import GalleryOpen from './screens/GalleryOpen';
+import HeaderComp from './comps/header'
+import Icon from 'react-native-ionicons';
+
 
 const AppNavigator = StackNavigator({
   
-  HomeScreen: { screen: Home },
-  LoginScreen: { screen: Login },
+  HomeScreen: { 
+    screen: Home,     
+  },
+  LoginScreen: { screen: Login, },
   
   CreateAccountScreen: {screen: CreateAccount},
   StartViewScreen: {screen: StartView},
@@ -44,7 +49,16 @@ const AppNavigator = StackNavigator({
 
 
 
+// Login.navigationOptions = {
+//   header: ({navigation}) => (
+//     <HeaderComp press={navigation.navigate('StartViewScreen')} />
+//   )
+// }
+
+
+
 export default class App extends Component {
+  
   render() {
     return (
       <AppNavigator />
