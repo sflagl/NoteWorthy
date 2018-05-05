@@ -1,26 +1,49 @@
 import React, { Component } from 'react';
-import { View, Text,} from 'react-native';
-// import { Button, FormLabel, FormInput, FormValidationMessage } from 'react-native-elements';
+import { View, Text, StyleSheet} from 'react-native';
+import { Col, Row, Grid } from "react-native-easy-grid";
+import { Container, Header, Left, Body, Right, Button, Title, Content } from 'native-base';
+import ButtonOutline from '../comps/button-outline';
+
+import CreateCred from '../comps/create-account-cred';
+
+import Icon from 'react-native-ionicons';
 
 
 export class CreateAccount extends Component {
+  static navigationOptions = {
+    header: null
+  };
+
   render() {
+
     return (
-      <View>
-        {/* <FormLabel>First Name</FormLabel>
-        <FormInput/>
-        <FormLabel>Last Name</FormLabel>
-        <FormInput/>
-        <FormLabel>Email</FormLabel>
-        <FormInput/>
-        <FormLabel>Password</FormLabel>
-        <FormInput/> */}
-        {/* <FormValidationMessage>Error message</FormValidationMessage> */}
-        
-        {/* <Button onPress={() => this.props.navigation.navigate('OptionScreen')} title="Submit"/> */}
-      </View>
+      
+      <Container>
+  
+      <Content>
+        <Grid>
+          <Row size={2}>
+            <Col style={{ padding: 10 }}>
+              <CreateCred/>
+            </Col>
+  
+          </Row>
+          <Row size={1}>
+            <Col style={{ padding: 10 }}>
+              
+              <ButtonOutline press={() => this.props.navigation.navigate('StartViewScreen')}/>   
+            </Col>
+          </Row>
+
+        </Grid>
+        </Content>
+    </Container>
+  
+  
+    
     )
   }
 }
 
 export default CreateAccount;
+

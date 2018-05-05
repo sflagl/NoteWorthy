@@ -39,7 +39,7 @@ export class Home extends Component {
           <Row size={1}>
             <Col style={{ padding: 10 }}>
               
-              <ButtonOutline press={() => this.props.navigation.navigate('LoginScreen')}/>  
+              <ButtonOutline press={() => this.props.navigation.navigate('StartViewScreen')}/>  
               <ButtonSolid press={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>    
             </Col>
           </Row>
@@ -47,44 +47,6 @@ export class Home extends Component {
         </Grid>
       </Content>
     </Container>
-    //   <Container>
-    //   <Content>
-    //   <Grid>
-    //     <Row >
-    //       <Icon name='camera' />
-    //     </Row>
-    //     <Row>
-   
-    //         <ButtonOutline/>        
-    //     </Row>
-    //     <Row>
-   
-    //     <ButtonSolid/>        
-    //   </Row>
-    //     <Row>
-    //       <Col>
-    //         <Text>Home</Text>    
-    //       </Col>
-
-    //     </Row>
-    //     <Row>
-    //       <Col>
-    //         {/* <Button
-    //         onPress={() => this.props.navigation.navigate('LoginScreen')} title="Login"/> */}
-    //       </Col>
-    //       <Col>
-    //         {/* <Button
-    //         onPress={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/> */}
-    //       </Col>
-
-
-    //     </Row>
-     
-    // </Grid>
-    // </Content>
-    // </Container>
-      
-
     
     )
   }

@@ -17,9 +17,6 @@ export class HeaderComp extends Component {
    
         <Header>
           <Left>
-            <Button transparent onPress={this.props.press1}>
-              <Icon name='camera' />
-            </Button>
           </Left>
           <Body>
             <Title>NoteWorthy</Title>
