@@ -9,10 +9,10 @@ export class GalleryCard extends Component {
   render() {
     return (
      
-      <Content cardBody style={{padding: 10}}>
+     
         <Card style={{paddingBottom: 5}}>
           <CardItem>
-            <Image source={require('../images/bear.jpg')} style={{height: 40, width: null, flex: 1}}/>
+            <Image source={require('../images/bear.jpg')} style={{height: 180, width: null, flex: 1}}/>
           </CardItem>
           <CardItem style={{marginTop: -5,marginBottom: -5 }}>
             <Left>
@@ -29,7 +29,7 @@ export class GalleryCard extends Component {
             </Right>
           </CardItem>
         </Card>
-      </Content>
+ 
      
 
     );

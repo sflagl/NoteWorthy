@@ -3,18 +3,25 @@ import { Container, Header, Content, Button, Text } from 'native-base';
 
 export class ButtonSolid extends Component {
   render() {
-    return (
+    
+     
+      return (
+
+
+      <Button onPress={this.props.press} style={{ margin: 10 }} block rounded success>
+        {this.props.btnname}
+      </Button>
 
         
 
-          <Button onPress={this.props.press} style={{ margin: 10 }} block rounded success>
-            <Text>B</Text>
-          </Button>
+      );
 
-    
-    );
+
+
   }
 }
+
+// const BtnS = (props) => <Button>{props.children}</Button>
 
 
 export default ButtonSolid;

@@ -11,13 +11,12 @@ import ButtonOutline from '../comps/button-outline';
 import ButtonSolid from '../comps/button';
 
 export class AddNote extends Component {
+
+
+
   render() {
     return (
       <Container style={{margin: 5}}>
-
-
-        
-
         
       <Grid>
       <HeaderComp />
@@ -43,7 +42,8 @@ export class AddNote extends Component {
         </Row>
         <Row size={1}>
         <Col>
-              <ButtonOutline/>  
+       
+              <ButtonOutline />  
               <ButtonSolid/>    
             </Col>
         </Row>
