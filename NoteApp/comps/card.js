@@ -23,7 +23,7 @@ export class GalleryCard extends Component {
               </Body>
             </Left>
             <Right>
-            <Button transparent>
+            <Button transparent onPress={this.props.press}>
               <Icon active name="arrow-round-forward" />
               </Button>
             </Right>

@@ -10,9 +10,10 @@ import Cam from '../comps/camera';
 import ButtonOutline from '../comps/button-outline';
 import ButtonSolid from '../comps/button';
 
+
+import { StackNavigator, NavigationActions, navigationOptions } from 'react-navigation';
+
 export class AddNote extends Component {
-
-
 
   render() {
     return (
@@ -42,9 +43,9 @@ export class AddNote extends Component {
         </Row>
         <Row size={1}>
         <Col>
-       
-              <ButtonOutline />  
-              <ButtonSolid/>    
+
+               <ButtonOutline press={() => this.props.navigation.navigate('StartViewScreen')} title="Add Note"/>   
+              <ButtonSolid title="Take Picture"/>    
             </Col>
         </Row>
 

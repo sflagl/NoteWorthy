@@ -31,7 +31,7 @@ export class CreateAccount extends Component {
           <Row size={1}>
             <Col style={{ padding: 10 }}>
               
-              <ButtonOutline press={() => this.props.navigation.navigate('StartViewScreen')}/>   
+              <ButtonOutline press={() => this.props.navigation.navigate('StartViewScreen')} title="Submit"/>   
             </Col>
           </Row>
 

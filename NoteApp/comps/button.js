@@ -9,7 +9,7 @@ export class ButtonSolid extends Component {
 
 
       <Button onPress={this.props.press} style={{ margin: 10 }} block rounded success>
-        {this.props.btnname}
+       <Text style={{color:'white'}}> {this.props.title} </Text>
       </Button>
 
         

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet, ScrollView} from 'react-native';
 import { Col, Row, Grid } from "react-native-easy-grid";
 import { Container, Header, Left, Body, Right, Button, Title } from 'native-base';
 import ButtonOutline from '../comps/button-outline';
@@ -14,56 +14,6 @@ import Thumb from '../comps/thumbnail';
 import Cam from '../comps/camera';
 
 import ButtonSolid from '../comps/button';
-
-
-
-
-
-// export class Login extends Component {
-
-//   // constructor(props){
-//   //   super(props)
-//   //   this.state = {
-//   //     navigator: this.navigation
-//   //   }
-  
-//   // }
-  
-
-
-//   static navigationOptions =  ({ navigation }) => {
-     
-//       return {
-//         header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('LoginScreen')}/>  
-//     }
-  
-   
-//   };
- 
-//   render() {
-
-  
-
-//     return (
-
-//       <Grid>
-   
-   
-//         <Row>
-          
-//         </Row>
-//         <Row>
-//           <Text>Login</Text>
-         
-//         </Row>
-
-//      <FooterComp />   
-//     </Grid>
-//     )
-//   }
-// };
-
-// export default Login;
 
 import { TabNavigator, navigationOptions } from 'react-navigation'; // Version can be specified in package.json
 
@@ -104,17 +54,22 @@ class GalleryTest extends Component {
 
   render() {
     return (
+      <ScrollView>
       <Grid>
-        
+       
      
         <Row>
-          <GalleryCard />   
+          <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />   
         </Row>
         <Row>
-          <GalleryCard />   
+          <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />   
         </Row>
-  
+        <Row>
+          <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />   
+        </Row>
+        
     </Grid>
+    </ScrollView>
     );
   }
 }
@@ -132,10 +87,6 @@ class AddNote extends Component {
   render() {
     return (
       <Container style={{margin: 5}}>
-
-
-        
-
         
       <Grid>
       
@@ -161,7 +112,7 @@ class AddNote extends Component {
         </Row>
         <Row size={1}>
         <Col>
-              <ButtonOutline/>  
+              <ButtonOutline press={() => this.props.navigation.navigate('EditNoteScreen')}/>  
               <ButtonSolid/>    
             </Col>
         </Row>

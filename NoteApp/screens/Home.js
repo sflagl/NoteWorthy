@@ -17,9 +17,9 @@ export class Home extends Component {
   };
 
   render() {
-    let logbtn = {
-      name: 'login'
-  }
+  //   let logbtn = {
+  //     name: 'login'
+  // }
     return (
    
       <Container>
@@ -39,7 +39,7 @@ export class Home extends Component {
           <Row size={1}>
             <Col style={{ padding: 10 }}>
               
-              <ButtonOutline press={() => this.props.navigation.navigate('StartViewScreen')}/>  
+              <ButtonOutline press={() => this.props.navigation.navigate('StartViewScreen')} title="Login"/>  
               <ButtonSolid press={() => this.props.navigation.navigate('CreateAccountScreen')} title="Create Account"/>    
             </Col>
           </Row>
