@@ -21,7 +21,7 @@ export class ButtonSolid extends Component {
   }
 }
 
-// const BtnS = (props) => <Button>{props.children}</Button>
+
 
 
 export default ButtonSolid;

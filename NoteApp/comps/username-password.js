@@ -8,11 +8,11 @@ export class UsernamePassword extends Component {
 
        
     
-        <Form>
-        <Item>
+        <Form style={{padding: 10}}>
+        <Item rounded style={{marginBottom:10, paddingLeft:10, backgroundColor: 'rgba(211, 211, 211, .4)'}}>
           <Input placeholder="Username" />
         </Item>
-        <Item>
+        <Item rounded style={{paddingLeft:10, backgroundColor: 'rgba(211, 211, 211, .4)'}}>
           <Input placeholder="Password" />
         </Item>
       </Form>
