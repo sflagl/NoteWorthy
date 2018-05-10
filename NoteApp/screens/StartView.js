@@ -19,57 +19,57 @@ import { TabNavigator, navigationOptions } from 'react-navigation'; // Version c
 
 class StartView extends Component {
 
-  static navigationOptions =  ({ navigation }) => {
-   
-    return {
-      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('HomeScreen')}/>  
-  }
-};
+  static navigationOptions = ({ navigation }) => {
 
-render() {
-  return (
-    <Grid>
-      
-   
-      <Row>
-        StartView
+    return {
+      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('HomeScreen')} />
+    }
+  };
+
+  render() {
+    return (
+      <Grid>
+
+
+        <Row>
+          StartView
       </Row>
 
 
-  </Grid>
-  );
-}
+      </Grid>
+    );
+  }
 }
 
 
 
 class GalleryTest extends Component {
 
-    static navigationOptions =  ({ navigation }) => {
-     
-      return {
-        header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('HomeScreen')}/>  
+  static navigationOptions = ({ navigation }) => {
+
+    return {
+      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('HomeScreen')} />
     }
   };
 
   render() {
     return (
       <ScrollView>
-      <Grid>
-       
-     
-        <Row>
-          <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />   
-        </Row>
-        <Row>
-          <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />   
-        </Row>
-        <Row>
-          <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />   
-        </Row>
-        
-    </Grid>
-    </ScrollView>
+        <Grid>
+
+
+          <Row>
+            <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />
+          </Row>
+          <Row>
+            <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />
+          </Row>
+          <Row>
+            <GalleryCard press={() => this.props.navigation.navigate('GalleryOpenScreen')} />
+          </Row>
+
+        </Grid>
+      </ScrollView>
     );
   }
 }
@@ -77,74 +77,80 @@ class GalleryTest extends Component {
 class AddNote extends Component {
 
 
-  static navigationOptions =  ({ navigation }) => {
-     
+  static navigationOptions = ({ navigation }) => {
+
     return {
-      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('LoginScreen')}/>  
+      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('LoginScreen')} />
     }
   };
 
   render() {
     return (
-      <Container style={{margin: 5}}>
-        
-      <Grid>
-      
-   
-        <Row size={1} style={{backgroundColor:'grey', padding:5}}>
-          <Cam style={{justifyContent: 'center',
-        alignItems: 'center'}}/>
-        </Row>
-        <Row size={1} style={{ padding:5, margin: 5, justifyContent: 'center',
-        alignItems: 'center'}}>
-          <Col>
-            <Thumb/>
-          </Col>   
-          <Col>
-            <Thumb/>
-          </Col>   
-          <Col>
-            <Thumb/>
-          </Col>   
-          <Col>
-            <Thumb/>
-          </Col>   
-        </Row>
-        <Row size={1}>
-        <Col>
-              <ButtonOutline press={() => this.props.navigation.navigate('EditNoteScreen')}/>  
-              <ButtonSolid/>    
+      <Container style={{ margin: 5 }}>
+
+        <Grid>
+
+
+          <Row size={1} style={{ backgroundColor: 'grey', padding: 5 }}>
+            <Cam style={{
+              justifyContent: 'center',
+              alignItems: 'center'
+            }} />
+          </Row>
+          <Row size={1} style={{
+            padding: 5, margin: 5, justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <Col>
+              <Thumb />
             </Col>
-        </Row>
+            <Col>
+              <Thumb />
+            </Col>
+            <Col>
+              <Thumb />
+            </Col>
+            <Col>
+              <Thumb />
+            </Col>
+          </Row>
+          <Row size={1}>
+            <Col>
+              <ButtonOutline press={() => this.props.navigation.navigate('EditNoteScreen')} />
+              <ButtonSolid />
+            </Col>
+          </Row>
 
 
-  
-    </Grid>
-     </Container>
+
+        </Grid>
+      </Container>
     );
   }
 }
 
 export default TabNavigator({
-  GalleryTest: { 
+  GalleryTest: {
     screen: GalleryTest,
     navigationOptions: {
-      tabBarLabel: (<Text style={{fontSize: 10, paddingBottom:5 }}>Gallery</Text>),
+      tabBarLabel: (<Text style={{ fontSize: 10, paddingBottom: 5 }}>Gallery</Text>),
       tabBarIcon: (<Icon name='images' size={25} />),
-    }, 
-   },
-   StartView: { screen: StartView,
+    },
+  },
+  StartView: {
+    screen: StartView,
     navigationOptions: {
-      tabBarLabel: (<Text style={{fontSize: 10, paddingBottom:5 }}>Start View</Text>),
+      tabBarLabel: (<Text style={{ fontSize: 10, paddingBottom: 5 }}>Start View</Text>),
       tabBarIcon: (<Icon name='camera' size={25} />),
     }
-   },
-   AddNote: { screen: AddNote,
+  },
+  AddNote: {
+    screen: AddNote,
     navigationOptions: {
-      tabBarLabel: (<Text style={{fontSize: 10, paddingBottom:5 }}>Add Note</Text>),
+      tabBarLabel: (<Text style={{ fontSize: 10, paddingBottom: 5 }}>Add Note</Text>),
       tabBarIcon: (<Icon name='create' size={25} />),
     }
-   },
+  },
 });
 
 

@@ -26,11 +26,9 @@ export class Home extends Component {
     
       <Grid>
         <ImageBackground
-          source={{ uri: 'https://images.unsplash.com/photo-1513127971914-6a8656fc9718?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=177c1df46cfb56093e949576a8485bcb&auto=format&fit=crop&w=632&q=80' }}
+          source={{ uri: 'https://images.unsplash.com/photo-1513909619904-efd11e5b8666?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c5c80f82f52136a57d191b2e081eb82c&auto=format&fit=crop&w=668&q=80' }}
           style={styles.container}>
-          {/* <Row>
-            <Icon name='camera' style={{ textAlign: 'center', fontSize: 100, color: 'grey', marginTop: 70 }} />
-          </Row> */}
+   
           <Row style={{ backgroundColor: 'rgba(255, 255, 255, .9)', marginTop: 30, marginBottom: 30, marginLeft: 10, marginRight: 10, height: 440, borderRadius: 10 }}>
 
             <Col>

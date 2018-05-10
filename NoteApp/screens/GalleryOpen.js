@@ -15,15 +15,15 @@ export class GalleryOpen extends Component {
         this.state = {
             entries: [
                 {
-                    title: 'First',
+                    
                     source: "https://images.unsplash.com/photo-1516073762189-e915e8248a2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c88660471b22d3c3b70faef2d57189d&auto=format&fit=crop&w=700&q=60"
                 },
                 {
-                    title: 'Second',
+                    
                     source: "https://images.unsplash.com/photo-1516073762189-e915e8248a2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c88660471b22d3c3b70faef2d57189d&auto=format&fit=crop&w=700&q=60"
                 },
                 {
-                    title: 'Third',
+                    
                     source: "https://images.unsplash.com/photo-1516073762189-e915e8248a2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c88660471b22d3c3b70faef2d57189d&auto=format&fit=crop&w=700&q=60"
                 }
             ]
@@ -43,7 +43,7 @@ export class GalleryOpen extends Component {
             <View>
 
                 <Image style={{ height: 300, width: '100%' }} source={{ uri: item.source }} />
-                <Text>{item.title}</Text>
+               
             </View>
         );
     }
@@ -71,10 +71,12 @@ export class GalleryOpen extends Component {
                                 containerCustomStyle={{ overflow: 'visible' }}
                                 contentContainerCustomStyle={{ overflow: 'visible' }}
                             />
+
                         </View>
                     </View>
                 </Row>
                 <Row size={1}>
+                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis maximus dui, in pulvinar lectus ultricies sagittis. Curabitur suscipit sapien magna, et vehicula ligula vestibulum id. Suspendisse augue sapien, venenatis in ullamcorper quis, vehicula quis turpis. Pellentesque ac tincidunt erat, aliquet dignissim purus. Duis condimentum cursus porta. Phasellus hendrerit dolor ut dignissim rhoncus. Nullam ultrices semper odio et laoreet. Morbi consequat massa nisl, ac dignissim ante consectetur at. Mauris quis ex interdum, varius massa eu, consequat urna. Sed ut efficitur ex. Ut lacinia egestas viverra.</Text>
                 </Row>
                 <Row size={1}>
                     <Col>

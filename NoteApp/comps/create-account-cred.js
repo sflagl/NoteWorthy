@@ -8,17 +8,17 @@ export class CreateCred extends Component {
 
        
     
-        <Form>
-        <Item>
+        <Form style={{padding: 10}}>
+        <Item rounded style={{marginBottom:10, paddingLeft:10, backgroundColor: 'rgba(211, 211, 211, .4)'}}>
           <Input placeholder="Full Name" />
         </Item>
-        <Item>
+        <Item rounded style={{marginBottom:10, paddingLeft:10, backgroundColor: 'rgba(211, 211, 211, .4)'}}>
           <Input placeholder="Email" />
         </Item>
-        <Item>
+        <Item rounded style={{marginBottom:10, paddingLeft:10, backgroundColor: 'rgba(211, 211, 211, .4)'}}>
           <Input placeholder="Password" />
         </Item>
-        <Item>
+        <Item rounded style={{marginBottom:10, paddingLeft:10, backgroundColor: 'rgba(211, 211, 211, .4)'}}>
           <Input placeholder="Confirm Password" />
         </Item>
       </Form>
