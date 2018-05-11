@@ -58,7 +58,7 @@ export class GalleryOpen extends Component {
                         <View style={{
                             transform: [{
                                 rotate: '0deg'
-                            }]
+                            }], paddingTop:7,
                         }}>
                             <Carousel
                                 inactiveSlideOpacity={0.6}
@@ -76,7 +76,9 @@ export class GalleryOpen extends Component {
                     </View>
                 </Row>
                 <Row size={1}>
-                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis maximus dui, in pulvinar lectus ultricies sagittis. Curabitur suscipit sapien magna, et vehicula ligula vestibulum id. Suspendisse augue sapien, venenatis in ullamcorper quis, vehicula quis turpis. Pellentesque ac tincidunt erat, aliquet dignissim purus. Duis condimentum cursus porta. Phasellus hendrerit dolor ut dignissim rhoncus. Nullam ultrices semper odio et laoreet. Morbi consequat massa nisl, ac dignissim ante consectetur at. Mauris quis ex interdum, varius massa eu, consequat urna. Sed ut efficitur ex. Ut lacinia egestas viverra.</Text>
+                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>1. Test</Text>
+                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>1. Test</Text>
+                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>1. Test</Text>
                 </Row>
                 <Row size={1}>
                     <Col>

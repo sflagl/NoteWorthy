@@ -15,12 +15,19 @@ import { StackNavigator, NavigationActions, navigationOptions } from 'react-navi
 
 export class AddNote extends Component {
 
+  static navigationOptions = ({ navigation }) => {
+
+    return {
+      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('HomeScreen')} />
+    }
+  };
+
   render() {
     return (
       <Container style={{margin: 5}}>
         
       <Grid>
-      <HeaderComp />
+   
    
         <Row size={1} style={{backgroundColor:'grey', padding:5}}>
           <Cam style={{justifyContent: 'center',

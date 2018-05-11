@@ -33,8 +33,8 @@ export class Home extends Component {
 
             <Col>
               <Row>
-            <Icon name='camera' style={{ fontSize: 100, color: 'grey', marginTop: 70 }} />
-          </Row>
+                <Text style={{ fontSize: 40, padding: 10, fontWeight: '100', flex:1,justifyContent: "center",alignItems: "center" }}>NoteWorthy</Text>
+              </Row>
 
               <Row >
                 

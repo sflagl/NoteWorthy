@@ -89,35 +89,19 @@ class AddNote extends Component {
       <Container style={{ margin: 5 }}>
 
         <Grid>
-
-
-          <Row size={1} style={{ backgroundColor: 'grey', padding: 5 }}>
-            <Cam style={{
-              justifyContent: 'center',
-              alignItems: 'center'
-            }} />
+        <Row size={1} style={{ padding: 10 }}>
+        <Text style={{ fontSize: 30, fontWeight:'100',}}>How to Create a Note:</Text>
+        </Row>
+          
+          <Row size={1} style={{ padding: 10 }}>
+          
+            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis maximus dui, in pulvinar lectus ultricies sagittis. Curabitur suscipit sapien magna, et vehicula ligula vestibulum id. Suspendisse augue sapien, venenatis in ullamcorper quis, vehicula quis turpis. Pellentesque ac tincidunt erat, aliquet dignissim purus. Duis condimentum cursus porta. Phasellus hendrerit dolor ut dignissim rhoncus. Nullam ultrices semper odio et laoreet. Morbi consequat massa nisl, ac dignissim ante consectetur at. Mauris quis ex interdum, varius massa eu, consequat urna. Sed ut efficitur ex. Ut lacinia egestas viverra.</Text>
           </Row>
-          <Row size={1} style={{
-            padding: 5, margin: 5, justifyContent: 'center',
-            alignItems: 'center'
-          }}>
+
+          <Row size={2}>
             <Col>
-              <Thumb />
-            </Col>
-            <Col>
-              <Thumb />
-            </Col>
-            <Col>
-              <Thumb />
-            </Col>
-            <Col>
-              <Thumb />
-            </Col>
-          </Row>
-          <Row size={1}>
-            <Col>
-              <ButtonOutline press={() => this.props.navigation.navigate('EditNoteScreen')} />
-              <ButtonSolid />
+              <ButtonOutline title="Add Note" press={() => this.props.navigation.navigate('EditNoteScreen')} />
+              <ButtonSolid  title="Take Picture" press={() => this.props.navigation.navigate('StartViewScreen')}/>
             </Col>
           </Row>
 
