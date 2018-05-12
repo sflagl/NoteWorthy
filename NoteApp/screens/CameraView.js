@@ -13,10 +13,10 @@ import ButtonSolid from '../comps/button';
 
 export class CameraView extends Component {
 
-  static navigationOptions =  ({ navigation }) => {
-     
+  static navigationOptions = ({ navigation }) => {
+
     return {
-      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('LoginScreen')}/>  
+      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('HomeScreen')} />
     }
   };
 

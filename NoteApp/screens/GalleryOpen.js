@@ -7,6 +7,7 @@ import { Col, Row, Grid } from "react-native-easy-grid";
 import { HeaderComp } from '../comps/header';
 
 
+
 const { height, width } = Dimensions.get('window');
 
 export class GalleryOpen extends Component {

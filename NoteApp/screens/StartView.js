@@ -89,37 +89,32 @@ class AddNote extends Component {
       <Container style={{ margin: 5 }}>
 
         <Grid>
-        <Row size={1} style={{ padding: 10 }}>
 
-        <Text style={{ fontSize: 30, fontWeight:'100',textAlign: 'center'}}>How to Create a Note:</Text>
-
+        {/* <Row size={1} style={{ padding: 10 }}>
 
 
-        </Row>
 
-        <Row>
-        <View style={{flex: 1, flexDirection: 'row'}}>
-          <View style={{flex: 1}}>
-            <Text>4 Views 0 Comments</Text>
-          </View>
-          <View style={{flex: 1}}>
-            <Text style={{textAlign: 'right'}}>Solve This</Text>
-          </View>
-        </View>
-        </Row>
+
+        </Row> */}
           
-          <Row size={1}>
+          <Row size={3}>
+          
+            {/* <Text style={{ fontSize: 30, fontWeight:'100',textAlign: 'center'}}>How to Create a Note:</Text> */}
+            
 
             <List>
+            <ListItem itemDivider>
+              <Text style={{ fontSize: 30, fontWeight:'100',textAlign: 'center'}}>Note:</Text>
+            </ListItem>
 
               <ListItem>
-                <Text style={{ fontWeight: '100', fontSize: 16, }}>1. Take at least 6 (left, right, sides, top, bottom) pictures of the item you want to make a note of. </Text>
+                <Text style={{ fontWeight: '100', fontSize: 20, }}>1. Click "Take Picture" of the item you want to take notes on. </Text>
               </ListItem>
               <ListItem>
-                <Text style={{ fontWeight: '100', fontSize: 20, }}>2. Nathaniel Clyne</Text>
+                <Text style={{ fontWeight: '100', fontSize: 20, }}>2. Or click "Add Note" to provide a gallery title and notes. </Text>
               </ListItem>
               <ListItem>
-                <Text style={{ fontWeight: '100', fontSize: 20, }}>3. Dejan Lovren</Text>
+                <Text style={{ fontWeight: '100', fontSize: 20, }}>3. Click Submit, on the next page once you have completed you notes. </Text>
               </ListItem>
             </List>
           </Row>
@@ -134,7 +129,6 @@ class AddNote extends Component {
               <ButtonSolid  title="Take Picture" press={() => this.props.navigation.navigate('CameraViewScreen')}/>
             </Col>
           </Row>
-
 
 
         </Grid>
