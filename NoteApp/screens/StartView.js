@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, ScrollView} from 'react-native';
 import { Col, Row, Grid } from "react-native-easy-grid";
-import { Container, Header, Left, Body, Right, Button, Title } from 'native-base';
+import { Container, Header, Left, Body, Right, Button, Title, List, ListItem } from 'native-base';
 import ButtonOutline from '../comps/button-outline';
 
 import Icon from 'react-native-ionicons';
@@ -90,15 +90,32 @@ class AddNote extends Component {
 
         <Grid>
         <Row size={1} style={{ padding: 10 }}>
+
         <Text style={{ fontSize: 30, fontWeight:'100',}}>How to Create a Note:</Text>
+
         </Row>
           
-          <Row size={1} style={{ padding: 10 }}>
-          
-            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis maximus dui, in pulvinar lectus ultricies sagittis. Curabitur suscipit sapien magna, et vehicula ligula vestibulum id. Suspendisse augue sapien, venenatis in ullamcorper quis, vehicula quis turpis. Pellentesque ac tincidunt erat, aliquet dignissim purus. Duis condimentum cursus porta. Phasellus hendrerit dolor ut dignissim rhoncus. Nullam ultrices semper odio et laoreet. Morbi consequat massa nisl, ac dignissim ante consectetur at. Mauris quis ex interdum, varius massa eu, consequat urna. Sed ut efficitur ex. Ut lacinia egestas viverra.</Text>
-          </Row>
+          <Row size={1}>
 
-          <Row size={2}>
+            <List>
+
+              <ListItem>
+                <Text style={{ fontWeight: '100', fontSize: 16, }}>1. Take at least 6 (left, right, sides, top, bottom) pictures of the item you want to make a note of. </Text>
+              </ListItem>
+              <ListItem>
+                <Text style={{ fontWeight: '100', fontSize: 20, }}>2. Nathaniel Clyne</Text>
+              </ListItem>
+              <ListItem>
+                <Text style={{ fontWeight: '100', fontSize: 20, }}>3. Dejan Lovren</Text>
+              </ListItem>
+            </List>
+          </Row>
+          
+          
+
+         
+
+          <Row size={1}>
             <Col>
               <ButtonOutline title="Add Note" press={() => this.props.navigation.navigate('EditNoteScreen')} />
               <ButtonSolid  title="Take Picture" press={() => this.props.navigation.navigate('StartViewScreen')}/>

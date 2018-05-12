@@ -12,8 +12,9 @@ import { StackNavigator, NavigationActions, navigationOptions, TabNavigator } fr
 
 import Home from './screens/Home';
 import CreateAccount from './screens/CreateAccount';
-
 import AddNote from './screens/AddNote';
+
+import CameraView from './screens/CameraView';
 import EditNote from './screens/EditNote';
 import StartView from './screens/StartView';
 
@@ -27,7 +28,7 @@ const AppNavigator = StackNavigator({
   HomeScreen: { screen: Home,},
   CreateAccountScreen: {screen: CreateAccount},
   StartViewScreen: {screen: StartView},
-
+  CameraViewScreen: {screen: CameraView},
   AddNoteScreen: { screen: AddNote },
   EditNoteScreen: { screen: EditNote },
   GalleryOpenScreen: {screen: GalleryOpen}
