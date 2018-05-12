@@ -25,12 +25,18 @@ export class CameraView extends Component {
         <Grid>
 
 
-            <Row style={{ backgroundColor: 'rgba(255, 255, 255, .9)', marginTop: 30, marginBottom: 30, marginLeft: 10, marginRight: 10, height: 440, borderRadius: 10 }}>
+            <Row size={1} style={{ backgroundColor: 'rgba(255, 255, 255, .9)', marginTop: 30, marginBottom: 30, marginLeft: 10, marginRight: 10, height: 440, borderRadius: 10 }}>
 
                 <Text>Camera View</Text>
 
 
 
+            </Row>
+
+            <Row size={1}>
+            <Col>
+            <ButtonSolid press={() => this.props.navigation.navigate('StartViewScreen')} title="Exit View" />
+            </Col>
             </Row>
 
         </Grid>

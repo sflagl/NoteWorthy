@@ -76,9 +76,9 @@ export class GalleryOpen extends Component {
                     </View>
                 </Row>
                 <Row size={1}>
-                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>1. Test</Text>
-                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>1. Test</Text>
-                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>1. Test</Text>
+                <Text style={{ paddingTop:20,paddingLeft:20,paddingRight:20, paddingBottom:10,}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in magna laoreet, aliquet quam at, pellentesque metus. Vestibulum augue nisl, lobortis at dolor at, sollicitudin iaculis diam. Nam in erat commodo, pellentesque lorem nec, commodo nunc. In tempor tristique eros sit amet sagittis. Aenean faucibus eleifend elementum. Cras facilisis in lorem eu suscipit. Aenean suscipit sapien nec lacinia aliquet. Aliquam erat volutpat. Sed tincidunt sapien a magna fermentum lobortis. Fusce lobortis leo ut blandit luctus. Vivamus pellentesque erat sit amet leo congue scelerisque.
+                </Text>
+
                 </Row>
                 <Row size={1}>
                     <Col>
