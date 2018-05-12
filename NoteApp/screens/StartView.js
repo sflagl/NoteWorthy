@@ -80,7 +80,7 @@ class AddNote extends Component {
   static navigationOptions = ({ navigation }) => {
 
     return {
-      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('LoginScreen')} />
+      header: <HeaderComp press1={() => navigation.navigate('StartViewScreen')} press2={() => navigation.navigate('HomeScreen')} />
     }
   };
 
@@ -91,8 +91,21 @@ class AddNote extends Component {
         <Grid>
         <Row size={1} style={{ padding: 10 }}>
 
-        <Text style={{ fontSize: 30, fontWeight:'100',}}>How to Create a Note:</Text>
+        <Text style={{ fontSize: 30, fontWeight:'100',textAlign: 'center'}}>How to Create a Note:</Text>
 
+
+
+        </Row>
+
+        <Row>
+        <View style={{flex: 1, flexDirection: 'row'}}>
+          <View style={{flex: 1}}>
+            <Text>4 Views 0 Comments</Text>
+          </View>
+          <View style={{flex: 1}}>
+            <Text style={{textAlign: 'right'}}>Solve This</Text>
+          </View>
+        </View>
         </Row>
           
           <Row size={1}>
@@ -118,7 +131,7 @@ class AddNote extends Component {
           <Row size={1}>
             <Col>
               <ButtonOutline title="Add Note" press={() => this.props.navigation.navigate('EditNoteScreen')} />
-              <ButtonSolid  title="Take Picture" press={() => this.props.navigation.navigate('StartViewScreen')}/>
+              <ButtonSolid  title="Take Picture" press={() => this.props.navigation.navigate('CameraViewScreen')}/>
             </Col>
           </Row>
 
@@ -134,7 +147,7 @@ export default TabNavigator({
   GalleryTest: {
     screen: GalleryTest,
     navigationOptions: {
-      tabBarLabel: (<Text style={{ fontSize: 10, paddingBottom: 5 }}>Gallery</Text>),
+      tabBarLabel: (<Text style={{ fontSize: 10, paddingBottom: 5 }}>Albums</Text>),
       tabBarIcon: (<Icon name='images' size={25} />),
     },
   },

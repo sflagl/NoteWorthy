@@ -24,7 +24,7 @@ export class EditNote extends Component {
       return (
         <Grid>
           <ImageBackground
-            source={{ uri: 'https://images.unsplash.com/photo-1513909894411-7d7e04c28ecd?ixlib=rb-0.3.5&s=94ead9f47034ed8cbd63747249c03066&auto=format&fit=crop&w=668&q=80' }}
+            source={{ uri: 'https://images.unsplash.com/photo-1513909619904-efd11e5b8666?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c5c80f82f52136a57d191b2e081eb82c&auto=format&fit=crop&w=668&q=80' }}
             style={styles.container}>
 
             <Row style={{ backgroundColor: 'rgba(255, 255, 255, .9)', marginTop: 30, marginBottom: 30, marginLeft: 10, marginRight: 10, height: 440, borderRadius: 10 }}>
@@ -69,7 +69,7 @@ export class EditNote extends Component {
                 </Row>
                 <Row>
                   <Col>
-                    <ButtonSolid press={() => this.props.navigation.navigate('CameraViewScreen')} title="Submit" />
+                    <ButtonSolid press={() => this.props.navigation.navigate('StartViewScreen')} title="Submit" />
                   </Col>
 
 
